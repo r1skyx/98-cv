@@ -1,0 +1,6 @@
+@import url("./tailwind.css");
+@import url("https://unpkg.com/98.css");
+
+body {
+	background-color: #008080;
+}
