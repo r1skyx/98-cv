@@ -1,14 +1,31 @@
-<script></script>
+<script>
+export default {
+	name: "ModalStart",
+	data() {
+		return {
+			showModal: true,
+		};
+	},
+	methods: {
+		closeModal() {
+			this.showModal = false;
+		},
+	},
+};
+</script>
 
 <template>
-	<div class="absolute right-1/2 top-1/2 translate-x-1/2 -translate-y-1/2">
+	<div
+		v-show="showModal"
+		class="absolute right-1/2 top-1/2 translate-x-1/2 -translate-y-1/2"
+	>
 		<div class="window">
 			<div class="title-bar">
 				<div class="title-bar-text">Welcome!</div>
 				<div class="title-bar-controls">
 					<button aria-label="Minimize"></button>
 					<button aria-label="Maximize"></button>
-					<button aria-label="Close"></button>
+					<button aria-label="Close" @click="closeModal"></button>
 				</div>
 			</div>
 			<div class="window-body">
