@@ -9,8 +9,7 @@ export default {
 </script>
 
 <template>
-	<files-menu></files-menu>
-	<modal-start></modal-start>
+	<router-view></router-view>
 </template>
 
 <style scoped></style>

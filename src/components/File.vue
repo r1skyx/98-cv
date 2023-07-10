@@ -1,8 +1,10 @@
 <template>
-	<div class="text-center w-fit m-5">
-		<img :src="getImageUrl()" class="w-20" alt="" />
-		<p>{{ text }}</p>
-	</div>
+	<router-link :to="routeTo">
+		<div class="text-center w-fit m-1 p-2">
+			<img :src="getImageUrl()" class="w-20 m-2" alt="" />
+			<p>{{ text }}</p>
+		</div>
+	</router-link>
 </template>
 
 <script>
@@ -11,6 +13,10 @@ export default {
 	props: {
 		text: String,
 		imgsrc: String,
+		routeTo: {
+			type: String,
+			required: false,
+		},
 	},
 	methods: {
 		getImageUrl() {
@@ -20,4 +26,4 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped></style>
