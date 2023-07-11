@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import WebDevView from "./views/WebDevView.vue";
 import MusicView from "./views/MusicView.vue";
 import BlogView from "./views/BlogView.vue";
+import ProjectsView from "./views/ProjectsView.vue";
 
 import DesktopView from "./views/DesktopView.vue";
 
@@ -25,6 +26,11 @@ const routes = [
 		path: "/music",
 		name: "Music",
 		component: MusicView,
+	},
+	{
+		path: "/web-dev/projects",
+		name: "Web Dev Projects",
+		component: ProjectsView,
 	},
 ];
 

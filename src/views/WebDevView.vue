@@ -31,7 +31,11 @@
 							</ul>
 						</div>
 						<div class="flex justify-end w-5/6 mt-24">
-							<button class="text-sm p-2">Continue to projects</button>
+							<router-link to="/web-dev/projects"
+								><button class="text-sm p-2">
+									Continue to projects
+								</button></router-link
+							>
 						</div>
 					</div>
 				</div>
