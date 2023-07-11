@@ -1,5 +1,5 @@
 <template>
-	<router-link :to="routeTo">
+	<router-link :to="routeTo" style="text-decoration: none; color: inherit">
 		<div class="text-center w-fit m-1 p-2">
 			<img :src="getImageUrl()" class="w-20 m-2" alt="" />
 			<p>{{ text }}</p>
